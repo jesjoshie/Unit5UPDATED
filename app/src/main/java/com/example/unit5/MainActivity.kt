@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var slider:SeekBar
         var ages= findViewById(R.id.resultTv1)as TextView
-
         val firstname = findViewById<EditText>(R.id.firstname)
         val lastname = findViewById<EditText>(R.id.lastname)
         val email = findViewById<EditText>(R.id.email)
@@ -39,7 +38,8 @@ class MainActivity : AppCompatActivity() {
             val lname = lastname.text.toString()
             val emailet = email.text.toString()
             val  taon= ages.text.toString()
-
+           /* val hbd = bdy.text.toString()
+*/
 
 
             val intent = Intent(this@MainActivity, MainActivity3::class.java)
@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("Last Name", lname)
             intent.putExtra("Email Address", emailet)
             intent.putExtra("Age",taon)
+          /*  intent.putExtra("BirthDate",hbd)*/
 
             startActivity(intent)
 

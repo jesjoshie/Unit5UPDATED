@@ -18,9 +18,7 @@ class MainActivity3 : AppCompatActivity() {
         val pickBtn = findViewById<Button>(R.id.pickDateBtn)
         val dateTv1 = findViewById(R.id.dateTv)as TextView
         val shwinfo = findViewById<Button>(R.id.show_info)
-
-
-
+        var bdy= findViewById(R.id.dateTv)as TextView
 
         pickBtn.setOnClickListener {
             val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view: DatePicker, mYear: Int, mMonth: Int, mDay: Int ->
@@ -30,13 +28,22 @@ class MainActivity3 : AppCompatActivity() {
             dpd.show()
         }
             shwinfo.setOnClickListener {
-
-                val datebirth = dateTv1.text.toString()
+                var hbdy = bdy.text.toString()
+                val fname = intent.getStringExtra("First Name")
+                val lname = intent.getStringExtra("Last Name")
+                val email = intent.getStringExtra("Email Address")
+                val ages = intent.getStringExtra("Age")
+                /*val hbd = intent.getStringExtra("BirthDate")*/
                 val intent = Intent(this@MainActivity3, MainActivity2::class.java)
-
-                intent.putExtra("BirthDate:", datebirth)
+                intent.putExtra("First Name", fname)
+                intent.putExtra("Last Name", lname)
+                intent.putExtra("Email Address", email)
+                intent.putExtra("Age",ages)
+                intent.putExtra("BirthDate",hbdy)
                 startActivity(intent)
             }
+
+
         }
 
-    }
+}

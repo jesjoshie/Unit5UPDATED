@@ -16,10 +16,10 @@ class MainActivity2 : AppCompatActivity() {
         val lname = intent.getStringExtra("Last Name")
         val email = intent.getStringExtra("Email Address")
         val ages = intent.getStringExtra("Age")
-        val dateTv1 = intent.getStringExtra("BirthDay")
+       val hbdy = intent.getStringExtra("BirthDate")
 
         val resultTv = findViewById<TextView>(R.id.resultTv)
-        resultTv.text = "First Name: " +fname+"\nLast Name:"+lname+"\nEmail:"+email+" \n Age:"+ages+"\n BirthDay:"+dateTv1+"\n"
+        resultTv.text = "First Name: " +fname+"\nLast Name:"+lname+"\nEmail:"+email+" \n Age:"+ages+"\n BirthDay:"+hbdy+"\n"
 
 
     }
