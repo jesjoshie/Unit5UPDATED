@@ -13,16 +13,41 @@
         android:src="@drawable/bg_login" />
 
     <Button
-        android:id="@+id/proceed1"
+        android:id="@+id/pickDateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="142dp"
-        android:layout_marginRight="142dp"
-        android:layout_marginBottom="525dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginRight="143dp"
+        android:layout_marginBottom="513dp"
         android:text="Pick BirthDate" />
 
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="188dp"
+        android:layout_marginRight="188dp"
+        android:layout_marginBottom="465dp"
+        android:text="Date"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/show_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:layout_marginBottom="115dp"
+        android:text="Show info" />
 
 </RelativeLayout>
