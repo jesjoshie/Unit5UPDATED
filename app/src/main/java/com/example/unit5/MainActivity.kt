@@ -1,6 +1,7 @@
 package com.example.unit5
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -17,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         val email = findViewById<EditText>(R.id.email)
         val proced = findViewById<Button>(R.id.proceed)
         slider = findViewById(R.id.seekBar2)as SeekBar
-
         slider.max = 60
         slider.setOnSeekBarChangeListener(object :SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, p2: Boolean) {
