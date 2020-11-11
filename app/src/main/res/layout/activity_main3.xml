@@ -24,6 +24,23 @@
         android:layout_marginBottom="513dp"
         android:text="Pick BirthDate" />
 
+    <EditText
+        android:id="@+id/phnnumber"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/rounded_white"
+        android:ems="10"
+        android:hint="PHONE NUMBER"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="102dp" />
+
     <TextView
         android:id="@+id/dateTv"
         android:layout_width="wrap_content"
@@ -51,7 +68,7 @@
         android:text="Show info" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/phone_sw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

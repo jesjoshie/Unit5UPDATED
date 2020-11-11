@@ -17,9 +17,10 @@ class MainActivity2 : AppCompatActivity() {
         val email = intent.getStringExtra("Email Address")
         val ages = intent.getStringExtra("Age")
        val hbdy = intent.getStringExtra("BirthDate")
+        val pnumbr = intent.getStringExtra("Phone Number")
 
         val resultTv = findViewById<TextView>(R.id.resultTv)
-        resultTv.text = "First Name: " +fname+"\nLast Name:"+lname+"\nEmail:"+email+" \n Age:"+ages+"\n BirthDay:"+hbdy+"\n"
+        resultTv.text = "First Name: " +fname+"\nLast Name:"+lname+"\nEmail:"+email+" \n Age:"+ages+"\nBirthDay:"+hbdy+"\nPhone No: "+pnumbr+"\n"
 
 
     }
